@@ -1,0 +1,303 @@
+:root {
+    --bg-color: #bea38a;
+    --primary-color: #5e452e;
+    --secondary-color: #47301a;
+    --third-color: #473320;
+    --third-bis-color: #352414;
+    --bg-input-color: #eeddcd;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
+    color: var(--third-bis-color);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+    background-color: var(--bg-input-color);
+}
+
+body{
+    background-image: url(/static/imagenes/fondo-registro.jpg);
+}
+ 
+
+/* footer */
+
+#footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+#footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--third-bis-color);
+    height: 100px;
+    width: 100%;
+
+}
+
+footer .redes-sociales i{
+    color: white;
+}
+
+
+/* header */
+.header {
+    background-color: var(--bg-color);
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+
+    display: block;
+    unicode-bidi: isolate;
+}
+.header .inicio-texto{
+    color: var(--third-color);
+}
+.header .inicio-texto:hover{
+    color: white;
+}
+.header .inicio-texto b:hover{
+    color: white;
+}
+.logo-pagina-inicio i{
+    color:var(--third-color);
+    width: 20px;
+}
+
+
+.nav {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 50px;
+}
+
+
+/* formulario */
+.formulario{
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family:  'Montserrat';
+    gap: 20px;
+}
+
+.formulario-label{
+    display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario-grupo-input{
+    position: relative;
+
+}
+
+.formulario-input{
+    width: 100%;
+	background: white;
+	border: 3px solid transparent;
+	border-radius: 10px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	/* transition: .3s ease all; */
+}
+
+.formulario-input:focus {
+	border: 3px solid var(--primary-color);
+	outline: none;
+	/* box-shadow: 3px 0px 30px rgba(163,163,163, 0.4); */
+}
+
+.formulario-input-error{
+    font-size: 12px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.formulario-input-error-activo{
+    display: block;
+}
+
+
+.formulario-input-error b {
+    color:red
+    
+}
+
+.formulario-validacion-estado{
+    position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario-checkbox{
+    margin: 10px;
+}
+
+.formulario-grupo-boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-boton{
+    height: 45px;
+	line-height: 45px;
+	width: 80%;
+	background: var(--third-bis-color);
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario-boton:hover{
+    background-color: white;
+    color: var(--third-bis-color);
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario-mensaje-exito{
+    font-size: 14px;
+	color: var(--third-bis-color);
+	display: none;
+}
+
+.formulario-mensaje-exito.activo{
+    display: block;
+}
+
+/* para validación */
+
+.formulario-grupo-correcto .formulario-validacion-estado {
+    color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-validacion-estado {
+    color: #bb2929;
+	opacity: 1;
+
+    }
+.formulario-grupo-incorrecto .formulario-label{
+    color: red;
+}
+.formulario-grupo-incorrecto .formulario-input{
+    border: 3px solid #bb2929;
+}
+
+/* GOOGLE FONTS */
+.oregano-regular {
+    font-family: "Oregano", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oregano-regular-italic {
+    font-family: "Oregano", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal
+}
+
+
+
+/* Media Queries para dispositivos */
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        font-size: 3vw;
+    }
+
+    .login-texto {
+        display: none;
+    }
+
+    .logo-texto {
+        display: none;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 3vw;
+    }
+
+
+    .login-texto {
+        display: none;
+    }
+
+    .inicio-texto {
+        display: none;
+    }
+
+
+
+    .boton-login {
+        font-size: 1vh;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .formulario-input{
+        font-size: 12px;
+    }
+}
