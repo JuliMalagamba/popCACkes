@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/static/imagenes/gluten-free.ico"">
+    <link rel="icon" href="/static/imagenes/gluten-free.ico">
 
     <title>GLUTEN FREE</title>
 
@@ -31,8 +31,8 @@
                 <!-- logo -->
                 <div class="logo-pagina-inicio" id="logo-pagina-inicio">
                     <a href="/index.html">
-                        <i class="logo-inicio fa-solid fa-cake-candles fa-bounce" p></i>
-                        <span class="inicio-texto"><b>popCACkes</b></span></a>
+                        <i class="logo-inicio fa-solid fa-cake-candles fa-bounce" ></i>
+                        <span class="inicio-texto"><b>popCACkes</b></span>
                     </a>
                 </div>
 
@@ -56,7 +56,6 @@
                         <a class="boton-login" href="/templates/formulario.html">
                             <i class="logo-boton-login fa-solid fa-right-to-bracket fa-beat"></i>
                             <span class="login-texto"> REGISTRARSE</span>
-                            <a class="registrarse-texto" href="/templates/formulario.html">REGISTRARSE</a>
                         </a>
                     </li>
                 </ul>
@@ -71,14 +70,14 @@
                 <div>
                     <!-- titulo receta -->
                     <div class="titulo-torta">
-                        <h2 class="oregano-regular">MOUSSE DE CHOCOLATE Y FRUTOS ROJOS <img
+                        <h2 class="oregano-regular">MOUSSE DE CHOCOLATE Y FRUTOS ROJOS <img class="img-gluten" 
                                 src="/static/imagenes/gluten-free.ico" alt=""> </h2>
                     </div>
 
                     <!-- foto torta -->
                     <div class="contenedor-foto-torta">
                         <img class="foto-torta" src="/static/imagenes/torta-mousse.jpg" alt="Mousse de chocolate"
-                            width="400px">
+                            width="400">
                     </div>
 
                 </div>
@@ -88,7 +87,7 @@
 
 
         <!-- receta del producto -->
-        <section id="info-receta">
+        <div id="info-receta">
             <div>
                 <!-- tabla con duracion y dificultad -->
                 <div class="tabla-receta">
@@ -107,58 +106,67 @@
 
 
                 <!-- ingredientes -->
-                <div>
-                    <ul class="ingredientes">
-                        <li><strong>PARA LA MARQUISE</strong></li>
-                        <p>- Manteca 150 g.</br>
-                            - Chocolate semi-amargo 200 g.</br>
-                            - Claras de huevo 5 unidades.</br>
-                            - Yemas 5 unidades.</br></p>
-                        <li><strong>PARA EL RELLENO</strong></li>
-                        <p>- Frutillas 250 g.</br>
-                            - Arándanos 50 g.</br>
-                            - Licor de naranja c/n.</br></p>
-                        <li><strong>PARA LA MOUSSE</strong></li>
-                        <p>- Crema 600 cc.</br>
-                            - Yema 3 unidades.</br>
-                            - Chocolate semi-amargo 300 g.</br></p>
-                        <li><strong>EXTRA</strong></li>
-                        <p>- Frutaillas.</br>
-                            - Arándanos.</br></p>
+                <div class="ingredientes">
+                    
+                        <p><strong>PARA LA MARQUISE</strong></p>
+                        <ul>
+                            <li>Manteca 150 g.</li>
+                            <li>Chocolate semi-amargo 200 g.</li>
+                            <li>Claras de huevo 5 unidades.</li>
+                            <li>Yemas 5 unidades.</li>
+                        </ul>
 
-                    </ul>
+                        <p><strong>PARA EL RELLENO</strong></p>
+                        <ul>
+                            <li>Frutillas 250 g.</li>
+                            <li>Arándanos 50 g.</li>
+                            <li>Licor de naranja c/n.</li>
+                        </ul>
+                        <p><strong>PARA LA MOUSSE</strong></p>
+                        <ul>
+                            <li>Crema 600 cc.</li>
+                            <li>Yema 3 unidades.</li>
+                            <li>Chocolate semi-amargo 300 g.</li>
+                        </ul>
+                        <p><strong>EXTRA</strong></p>
+                        <ul>
+                            <li>Frutillas.</li>
+                            <li>Arándanos.</li>
+                        </ul>
+
                 </div>
 
             </div>
 
             <!-- pasos -->
             <div class="procedimiento">
-                <p><strong>PROCEDIMIENTO:</strong> </br>
-                    </br>
-                    1. Fundir el chocolate y la manteca. </br>
-                    2. Incorporar a la preparación anterior las yemas. </br>
-                    3. Realizar un merengue con las claras de huevo. </br>
-                    4. Unificar con movimientos envolventes ambas preparaciones. </br>
-                    5. Llevar a un molde en mantecado de 24 cm de diámetro, llevar a horno moderado (180°C) durante 25
-                    minutos. Despegar del molde y generar una suave presión para que baje de manera pareja. Dejar
-                    enfriar en el mismo molde. </br>
-                    6. Cortar las frutillas en mitades, agregar los arándanos y sartenear a fuego fuerte durante unos
-                    minutos con el licor. </br>
-                    7. Colocar los 200 g de crema en una cacerola y llevar a primer hervor. </br>
-                    8. En un bol mezclar las yemas. Colar la crema, unificar y volver a cocción hasta espesar. No debe
-                    hervir. </br>
-                    9. Volcar sobre el chocolate y mezclar hasta lograr una crema brillosa. </br>
-                    10. Agregar la crema a medio punto. </br>
-                    11. Disponer en una manga de repostería y llenar el. molde con el bizcocho de base y el centro de
-                    frutillas y arándanos cocidos. </br>
-                    12. Llevar a heladera por 4 hs y cubrir con ganache fluida. Volver al frío y decorar. </br>
-                </p>
+                <p><strong>PROCEDIMIENTO:</strong> <p>
+                    <ol>
+                        <li>Fundir el chocolate y la manteca.</li>
+                        <li>Incorporar a la preparación anterior las yemas.</li>
+                        <li>Realizar un merengue con las claras de huevo.</li>
+                        <li>Unificar con movimientos envolventes ambas preparaciones.</li>
+                        <li>Llevar a un molde en mantecado de 24 cm de diámetro, llevar a horno moderado (180°C) durante 25
+                            minutos. Despegar del molde y generar una suave presión para que baje de manera pareja. Dejar
+                            enfriar en el mismo molde.</li>
+                        <li>Cortar las frutillas en mitades, agregar los arándanos y sartenear a fuego fuerte durante unos
+                            minutos con el licor.</li>
+                        <li>Colocar los 200 g de crema en una cacerola y llevar a primer hervor.</li>
+                        <li>En un bol mezclar las yemas. Colar la crema, unificar y volver a cocción hasta espesar. No debe
+                            hervir.</li>
+                        <li>Volcar sobre el chocolate y mezclar hasta lograr una crema brillosa.</li>
+                        <li>Agregar la crema a medio punto.</li>
+                        <li>Disponer en una manga de repostería y llenar el. molde con el bizcocho de base y el centro de
+                            frutillas y arándanos cocidos.</li>
+                        <li>Llevar a heladera por 4 hs y cubrir con ganache fluida. Volver al frío y decorar.</li>
+                    </ol>
+
             </div>
-        </section>
+        </div>
 
         <div class="boton-volver">
             <a href="./sintaac.html">
-                <span class="texto-volver"> VOLVER</span>
+                <span class="texto-volver"> VOLVER</span></a>
         </div>
 
 
@@ -168,9 +176,9 @@
 
 
     <footer id="footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Preguntas frecuentes</a>
-        <a href="">Ayuda</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
 
         <div class="redes-sociales">
             <a href="https://www.whatsapp.com/" target="_blank">

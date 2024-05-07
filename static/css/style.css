@@ -431,11 +431,27 @@ a {
         width: 400px;
         font-size: 16px;
     }
+    #buscador h2{
+        font-size: 3vw;
+    }
     
     #footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .titulo-torta h2{
+        font-size: 4vw;
+    }
+    .foto-torta{
+        width: 350px;
+        height: 450px;
+    }
+
+
+    .img-gluten{
+        color: var(--secondary-color);
+        width: 40px;
     }
 
     .login-texto {
@@ -449,7 +465,9 @@ a {
     .texto-banner {
         padding: 0px 75px;
     }
-
+    .texto-banner h1{
+        font-size: 3vw;
+    }
     .d-flex-2{
         margin-top: 150px;
     }
@@ -462,11 +480,23 @@ a {
 
 }
 
-/**************************CELULARES********************/
+/**********************************************CELULARES*********************************/
 @media screen and (max-width: 767px) {
    
+
+        
+    #buscador #input-buscador {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    #buscador h2{
+        font-size: 3vw;
+    }
+
     .login-texto {
-        display: none;
+        display: block;
     }
 
     .inicio-texto {
@@ -474,17 +504,89 @@ a {
     }
 
     .boton-login {
+        display: block;
+        padding: 0px;
+    }
+
+    .boton-login:hover {
+        background-color: none;
+        padding: 0px;
+        border-radius: 0px;
+        color: none;
+        box-shadow: none;
+    }
+
+    .boton-login i{
         display: none;
     }
-    #buscador #input-buscador {
-        width: 400px;
-        font-size: 14px;
+
+
+
+    .boton-login-2 {
+        padding: 10px;
+        font-size: 12px;
     }
+    .boton-volver{
+        width: 80px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .img-gluten{
+        color: var(--secondary-color);
+        width: 30px;
+    }
+
+    .texto-banner{
+        padding: 0px;
+    }
+
+    .texto-banner h1{
+        font-size: 3vw;
+    }
+
+
+
     .d-flex-2{
         margin-top: 50px;
     }
 
-    /* menú hamburuesa */
+
+    .texto-team-dulce{
+        font-size: 3vw;
+    }
+    .contenedor3 {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 10px;
+        width: 500px;
+    }
+    .recetas-img{
+        width: 150px;
+        height: 250px;
+    }
+    .contenedor-recetas{
+        margin-top: 20px;
+
+    }
+
+    .contenedor-recetas p{
+        font-size: 15px;
+    }
+    .titulo-torta{
+        margin-top: 90px;
+    }
+
+    .titulo-torta h2{
+        font-size: 4vw;
+    }
+    .foto-torta{
+        width: 250px;
+        height: 350px;
+    }
+
+    /************************** menú hamburuesa ************************/
     .registrarse-texto {
         display: block;
     }
@@ -549,24 +651,11 @@ a {
         text-align: right;
     }
 
-    .contenedor3 {
-        margin-top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        width: 500px;
-    }
+
     #footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-
-
-
-
-
-
-
 
 }
