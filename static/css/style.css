@@ -178,18 +178,19 @@ a {
     color: var(--secondary-color);
     margin-bottom: 20px;
     font-family: 'Oregano';
+    font-size: 70px;
 }
 
 .texto-banner .h2-subtitulo {
     margin-top: 0px;
     margin-bottom: 30px;
+    font-size: 50px;
 }
 
 
 /*****SLIDER*******/
 
 .container-slider{
-    /* height: 100vh; */
     width: 100%;
     display: grid;
     place-content: center;
@@ -394,252 +395,6 @@ a {
 }
 
 
-
-/************************* Media Queries para dispositivos ************************/
-
-/****************TABLETS*****************/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    h2 {
-        font-size: 3vw;
-    }
-    #banner {
-        height: 400px;
-    }
-    #buscador #input-buscador {
-        width: 400px;
-        font-size: 16px;
-    }
-    #buscador h2{
-        font-size: 3vw;
-    }
-    
-    #footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .titulo-torta h2{
-        font-size: 4vw;
-    }
-    .foto-torta{
-        width: 350px;
-        height: 450px;
-    }
-
-
-    .img-gluten{
-        color: var(--secondary-color);
-        width: 40px;
-    }
-
-    .login-texto {
-        display: none;
-    }
-
-    .logo-texto {
-        display: none;
-    }
-
-    .texto-banner {
-        padding: 0px 75px;
-    }
-    .texto-banner h1{
-        font-size: 3vw;
-    }
-    .d-flex-2{
-        margin-top: 150px;
-    }
-    .contenedor3 {
-        margin-top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 700px;
-    }
-
-}
-
-/**********************************************CELULARES*********************************/
-@media screen and (max-width: 767px) {
-   
-
-        
-    #buscador #input-buscador {
-        width: 300px;
-        height: 30px;
-        font-size: 14px;
-    }
-    
-    #buscador h2{
-        font-size: 3vw;
-    }
-
-    .login-texto {
-        display: block;
-    }
-
-    .inicio-texto {
-        display: none;
-    }
-
-    .boton-login {
-        display: block;
-        padding: 0px;
-    }
-
-    .boton-login:hover {
-        background-color: none;
-        padding: 0px;
-        border-radius: 0px;
-        color: none;
-        box-shadow: none;
-    }
-
-    .boton-login i{
-        display: none;
-    }
-
-
-
-    .boton-login-2 {
-        padding: 10px;
-        font-size: 12px;
-    }
-    .boton-volver{
-        width: 80px;
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .img-gluten{
-        color: var(--secondary-color);
-        width: 30px;
-    }
-
-    .texto-banner{
-        padding: 0px;
-    }
-
-    .texto-banner h1{
-        font-size: 3vw;
-    }
-
-
-
-    .d-flex-2{
-        margin-top: 50px;
-    }
-
-
-    .texto-team-dulce{
-        font-size: 3vw;
-    }
-    .contenedor3 {
-        margin-top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        column-gap: 10px;
-        width: 500px;
-    }
-    .recetas-img{
-        width: 150px;
-        height: 250px;
-    }
-    .contenedor-recetas{
-        margin-top: 20px;
-
-    }
-
-    .contenedor-recetas p{
-        font-size: 15px;
-    }
-    .titulo-torta{
-        margin-top: 90px;
-    }
-
-    .titulo-torta h2{
-        font-size: 4vw;
-    }
-    .foto-torta{
-        width: 250px;
-        height: 350px;
-    }
-    .formulario-input{
-        font-size: 12px;
-    }
-
-    /************************** menú hamburuesa ************************/
-    .registrarse-texto {
-        display: block;
-    }
-
-    #menu-check:not(:checked)~.nav-links {
-        display: none;
-    }
-
-    #menu-check:checked~.nav-links {
-        display: block;
-
-    }
-
-    #menu {
-        display: block;
-        color: var(--third-bis-color);
-        font-size: 1.2em;
-        font-weight: bold;
-        position: absolute;
-        right: 0.5em;
-        top: 0.5em;
-        z-index: 9999;
-    }
-
-    #menu:hover {
-        color: white;
-        /* background-color: var(--third-bis-color); */
-    }
-
-    #menu-cerrar {
-        display: none;
-    }
-
-    #menu-check:checked~label #menu-abrir {
-        display: none;
-    }
-
-    #menu-check:checked~label #menu-cerrar {
-        display: block;
-    }
-
-    header div.contenedor .nav-links {
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        background-color: var(--third-bis-color);
-        padding-top: 0.em;
-        padding-right: 1.5em;
-        opacity: 0.8;
-        color: white;
-        font-size: 1em;
-    }
-
-    header div.contenedor .nav-links ul a {
-        color: white;
-        background: none;
-    }
-
-    header div.contenedor .nav-links ul,
-    header div.contenedor .nav-links ul li {
-        display: block;
-        text-align: right;
-    }
-
-
-    #footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
 /***************FORMULARIO***************/
 .main-formulario{
 	max-width: 800px;
@@ -742,6 +497,30 @@ a {
     color: var(--third-bis-color);
     box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
+.formulario-mensaje {
+    display: none;
+    background-color: yellow;
+}
+
+.formulario-mensaje-activo{
+    color: var(--third-color);
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-style: bold;
+    display: block;
+    text-align: center;
+    border: solid;
+    border-color: red;
+}
+.formulario-mensaje-activo i{
+    color: red;
+}
+.formulario-mensaje-activo b{
+    color: red;
+}
 
 .formulario-mensaje-exito{
     font-size: 14px;
@@ -749,8 +528,17 @@ a {
 	display: none;
 }
 
-.formulario-mensaje-exito.activo{
+.formulario-mensaje-exito-activo{
+    color: var(--third-color);
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-style: bold;
     display: block;
+    border: solid;
+    border-color: green;
 }
 
 /* para validación */
@@ -770,4 +558,276 @@ a {
 }
 .formulario-grupo-incorrecto .formulario-input{
     border: 3px solid #bb2929;
+}
+
+
+
+
+/************************* Media Queries para dispositivos ************************/
+
+/****************TABLETS*****************/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        font-size: 3vw;
+    }
+    #banner {
+        height: 400px;
+    }
+    #buscador #input-buscador {
+        width: 400px;
+        font-size: 16px;
+    }
+    #buscador h2{
+        font-size: 3vw;
+    }
+    
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-torta h2{
+        font-size: 4vw;
+    }
+    .foto-torta{
+        width: 350px;
+        height: 450px;
+    }
+
+
+    .img-gluten{
+        color: var(--secondary-color);
+        width: 40px;
+    }
+
+    .login-texto {
+        display: none;
+    }
+
+    .logo-texto {
+        display: none;
+    }
+
+    .texto-banner {
+        padding: 0px 75px;
+    }
+    .texto-banner h2{
+        font-size: 40px;
+    }
+.texto-banner .h2-subtitulo{
+    font-size: 30px;
+}
+
+    .texto-banner h1{
+        font-size: 3vw;
+    }
+    .d-flex-2{
+        margin-top: 200px;
+    }
+    .contenedor3 {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 700px;
+    }
+
+}
+
+/**********************************************CELULARES*********************************/
+@media screen and (max-width: 767px) {
+   
+
+        
+    #buscador #input-buscador {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    #buscador h2{
+        font-size: 3vw;
+    }
+
+    .login-texto {
+        display: block;
+    }
+
+    .inicio-texto {
+        display: none;
+    }
+
+    .boton-login {
+        display: block;
+        padding: 0px;
+    }
+
+    .boton-login:hover {
+        background-color: none;
+        padding: 0px;
+        border-radius: 0px;
+        color: none;
+        box-shadow: none;
+    }
+
+    .boton-login i{
+        display: none;
+    }
+
+
+
+    .boton-login-2 {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .boton-volver{
+        width: 80px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .img-gluten{
+        color: var(--secondary-color);
+        width: 30px;
+    }
+    
+
+    .texto-banner{
+        padding: 0px;
+    }
+    .texto-banner h2{
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .texto-banner h1{
+        font-size: 15px;
+    }
+    
+    .texto-banner .h2-subtitulo{
+    font-size: 20px;
+    }
+    
+    .slider{
+        height: 200px;
+    }
+
+
+    .d-flex-2{
+        margin-top: 50px;
+    }
+
+
+    .texto-team-dulce{
+        font-size: 3vw;
+    }
+    .contenedor3 {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 10px;
+        width: 500px;
+    }
+    .recetas-img{
+        width: 150px;
+        height: 250px;
+    }
+    .contenedor-recetas{
+        margin-top: 20px;
+
+    }
+
+    .contenedor-recetas p{
+        font-size: 15px;
+    }
+    .titulo-torta{
+        margin-top: 90px;
+    }
+
+    .titulo-torta h2{
+        font-size: 4vw;
+    }
+    .foto-torta{
+        width: 250px;
+        height: 350px;
+    }
+    .formulario-input{
+        font-size: 12px;
+    }
+    #formulario{
+        margin: 15px;
+    }
+
+    /************************** menú hamburuesa ************************/
+    /* .registrarse-texto {
+        display: block;
+    } */
+
+    #menu-check:not(:checked)~.nav-links {
+        display: none;
+    }
+
+    #menu-check:checked~.nav-links {
+        display: block;
+
+    }
+
+    #menu {
+        display: block;
+        color: var(--third-bis-color);
+        font-size: 1.2em;
+        font-weight: bold;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 9999;
+    }
+
+    #menu:hover {
+        color: white;
+        /* background-color: var(--third-bis-color); */
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-abrir {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-cerrar {
+        display: block;
+    }
+
+    header div.contenedor .nav-links {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: var(--third-bis-color);
+        padding-top: 0.em;
+        padding-right: 1.5em;
+        opacity: 0.8;
+        color: white;
+        font-size: 1em;
+    }
+
+    header div.contenedor .nav-links ul a {
+        color: white;
+        background: none;
+    }
+
+    header div.contenedor .nav-links ul,
+    header div.contenedor .nav-links ul li {
+        display: block;
+        text-align: right;
+    }
+
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

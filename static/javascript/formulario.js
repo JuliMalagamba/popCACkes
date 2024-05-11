@@ -30,7 +30,6 @@ const validarFormulario = (e) => {
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
-			validarPassword2();
 		break;
 		case "email":
 			validarCampo(expresiones.email, e.target, 'email');
@@ -76,7 +75,11 @@ formulario.addEventListener('submit', (e) => {
 		document.querySelectorAll('.formulario-grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario-grupo-correcto');
 		});
+		
 	} else {
 		document.getElementById('formulario-mensaje').classList.add('formulario-mensaje-activo');
+		setTimeout(() => {
+			document.getElementById('formulario-mensaje').classList.remove('formulario-mensaje-activo');
+		}, 3000);
 	}
 });
