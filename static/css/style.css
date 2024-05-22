@@ -369,6 +369,11 @@ a {
 
 
 /******************************RECETARIOS************************/
+
+#info-receta {
+    color: var(--third-bis-color);
+}
+
 .titulo-torta {
     margin-top: 150px;
     height: 60px;
@@ -414,16 +419,24 @@ a {
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-
 }
-
-.boton-volver a {
+.boton-volver a{
     color: white;
 }
-
-#info-receta {
+.boton-volver:hover a{
     color: var(--third-bis-color);
 }
+
+.boton-volver:hover{
+    background-color: white;
+    color: var(--third-bis-color);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+
 
 
 /*************************FOOTER***************************/
@@ -519,6 +532,26 @@ a {
     color:red
     
 }
+
+.formulario-textarea{
+    
+    width: 100%;
+	background: white;
+	border: 3px solid transparent;
+	border-radius: 10px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	/* transition: .3s ease all; */
+
+}
+
+.formulario-textarea:focus {
+	border: 3px solid var(--primary-color);
+	outline: none;
+	/* box-shadow: 3px 0px 30px rgba(163,163,163, 0.4); */
+}
+
 
 .formulario-validacion-estado{
     position: absolute;
@@ -684,9 +717,9 @@ a {
     .texto-banner h2{
         font-size: 40px;
     }
-.texto-banner .h2-subtitulo{
-    font-size: 30px;
-}
+    .texto-banner .h2-subtitulo{
+        font-size: 30px;
+    }
 
     .texto-banner h1{
         font-size: 3vw;
@@ -717,6 +750,16 @@ a {
     #buscador h2{
         font-size: 3vw;
     }
+
+    #formulario{
+        margin: 15px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     .login-texto {
         display: block;
@@ -824,19 +867,16 @@ a {
     .formulario-input{
         font-size: 12px;
     }
+    .formulario-textarea{
+        font-size: 12px;
+    }
     .formulario-mensaje-exito-activo{
         font-size: 15px ;
         text-align: center;
     }
 
-    #formulario{
-        margin: 15px;
-    }
 
     /************************** menú hamburuesa ************************/
-    /* .registrarse-texto {
-        display: block;
-    } */
 
     #menu-check:not(:checked)~.nav-links {
         display: none;
@@ -896,13 +936,6 @@ a {
     header div.contenedor .nav-links ul li {
         display: block;
         text-align: right;
-    }
-
-
-    #footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
 }
